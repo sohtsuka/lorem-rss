@@ -202,8 +202,8 @@
     }
     pubDate = getNearest(interval, unit);
     feed = new RSS({
-      title: `Lorem ipsum feed for an interval of ${interval} ${unit}s with ${length} item(s)`,
-      description: 'This is a constantly updating lorem ipsum feed',
+      title: `🐟🐟Lorem ipsum feed for an interval of ${interval} ${unit}s with ${length} item(s)`,
+      description: '🌰🌰This is a constantly updating lorem ipsum feed',
       site_url: 'http://example.com/',
       copyright: 'Michael Bertolacci, licensed under a Creative Commons Attribution 3.0 Unported License.',
       ttl: Math.ceil(moment.duration(interval, unit).asMinutes()),
@@ -212,12 +212,12 @@
     pubDate = getNearest(interval, unit);
     for (i = j = 0, ref = length; (0 <= ref ? j < ref : j > ref); i = 0 <= ref ? ++j : --j) {
       feed.item({
-        title: `Lorem ipsum ${pubDate.format()}`,
-        description: loremIpsum({
+        title: `🐟Lorem ipsum ${pubDate.format()}`,
+        description: '🌰' + loremIpsum({
           random: seedRandom(pubDate.unix())
         }),
         url: `http://example.com/test/${pubDate.format('X')}`,
-        author: 'John Smith',
+        author: '✒️John Smith',
         date: pubDate.clone().toDate()
       });
       pubDate = pubDate.subtract(interval, unit);
