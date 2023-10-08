@@ -5,6 +5,7 @@
   "main": "web.js",
   "scripts": {
     "start": "node web.js",
+    "build": "coffee -c web.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,5 +18,8 @@
     "morgan": "1.9.1",
     "rss": "1.2.2",
     "seed-random": "1.0.1"
+  },
+  "devDependencies": {
+    "coffeescript": "2.7.0"
   }
 }
